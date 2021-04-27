@@ -6,6 +6,7 @@ import navHome from "../assets/back.png";
 import navOne from "../assets/nav-1.png";
 import navTwo from "../assets/nav-2.png";
 import navThree from "../assets/nav-3.png";
+import { Figure } from "react-bootstrap";
 
 const Navigation = () => {
   return (
@@ -16,16 +17,16 @@ const Navigation = () => {
           <img src={navHome} id="navHome" alt="NavBack" />
         </Link>
 <div id="navFloat">
-        <Link to="/About">
-          <img id="navOne" src={navOne} alt="NavIcon" />
+        <Link to="/About" id="navOne">
+            <img  src={navOne} alt="NavIcon" />
         </Link>
 
-        <Link to="/Maintain">
-          <img id="navTwo"  src={navTwo} alt="NavIcon" />
+        <Link to="/Maintain" id="navTwo">
+           <img  src={navTwo} alt="NavIcon" />
         </Link>
         
-        <Link to="/Contact">
-          <img id="navThree" src={navThree} alt="NavIcon" />
+        <Link to="/Contact" id="navThree">
+          <img id="" src={navThree} alt="NavIcon" />
         </Link>
 </div>
       </nav>

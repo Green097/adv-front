@@ -10,11 +10,15 @@ import Logo from "../assets/logo-b.png";
 import imgOne from "../assets/whatwedo-small.png";
 import imgTwo from "../assets/maintainable-small.png";
 import imgThree from "../assets/getintouch-small.png";
+import navImage from "../assets/nav-3-where.png"
 
 const Contact = () => {
+  const image = document.createElement('Img')
+  image.src = (navImage)
   const color = "linear-gradient(180deg, rgba(255,180,114,1) 0%, rgba(255,180,114,1) 100%)";
   useEffect( ()=>{
   document.body.style.backgroundImage = color ;
+  document.querySelector('#navThree').appendChild(image)
  });
 
   return (

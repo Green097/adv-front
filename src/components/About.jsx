@@ -7,11 +7,15 @@ import Navigation from "./Navigation";
 import imgLarge from "../assets/front-what-we-do-link.png"
 import imgSmall from "../assets/weba-2-mobil-whatwedo.png"
 import Logo from "../assets/logo-a.png"
+import navImage from "../assets/nav-1-where.png"
 
 const About = () => {
+  const image = document.createElement('Img')
+  image.src = (navImage)
   const color = "linear-gradient(180deg, rgba(171,207,230,1) 0%, rgba(171,207,230,1) 100%)";
   useEffect( ()=>{
   document.body.style.backgroundImage = color ;
+  document.querySelector('#navOne').appendChild(image)
  });
   return (
     <Fragment>
